@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin
+    />
+    <link rel="stylesheet" href="index.eb13fca7.css" />
+    <link rel="icon shortcut" sizes="32x32" href="favicon.d7975d72.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="sidebar__wrapper">
+          <div class="sidebar__user">
+            <img class="sidebar__user-logo" src="user.e7ce5a8a.png" alt="" />
+            <h4 class="sidebar__user-profile">Profile</h4>
+          </div>
+          <div class="sidebar__navigation">
+            <div class="sidebar__navigation-content">
+              <ul class="sidebar__list">
+                <li class="active-item journal sidebar__list-item">
+                  <img class="sidebar__list-img" src="journal.6dd64be7.png" alt="" />
+                  <a class="sidebar__list-link" href="#">Journal</a>
+                </li>
+                <li class="active-item journal sidebar__list-item">
+                  <img class="sidebar__list-img" src="task.eef234de.png" alt="" />
+                  <a class="sidebar__list-link" href="#">Tasks</a>
+                </li>
+                <li class="active-item journal sidebar__list-item">
+                  <img class="sidebar__list-img" src="group.8f408c09.png" alt="" />
+                  <a class="sidebar__list-link" href="#">Group</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="main">
+        <section class="modal modal-group">
+          <div class="modal__content modal-group__content">
+            <form class="modal-group__form">
+              <h2>Create new Group</h2>
+              <label for="color">Choose color</label>
+              <input class="modal-group__form-color" type="color" name="color" id="color" />
+              <label for="task-name">Group name</label>
+              <input
+                class="modal-group__text task-name"
+                type="text"
+                id="group-name"
+                placeholder="House"
+              />
+              <div class="btn">
+                <input class="btn__create create-group" type="button" value="Create" />
+                <input class="btn__cancel group-btn" type="button" value="Cancel" />
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="modal modal-task">
+          <div class="modal__content modal-task__content">
+            <form class="modal-task__form">
+              <h2>Create new Task</h2>
+              <input class="modal-task__value task-name" type="text" name="task" placeholder="Do" />
+              <label for="select-group">Choose group</label>
+              <select class="modal-task__select" id="select-group"></select>
+              <input type="date" class="deadline" id="deadline" required />
+              <div class="btn">
+                <input class="btn__create create__task" type="button" value="Create " />
+                <input class="btn__cancel task-btn" type="button" value="Cancel" />
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="constructor">
+          <div class="container">
+            <button class="add constructor__group">
+              Add Group Tasks <i class="fa-plus-circle fas"></i>
+            </button>
+            <button class="add constructor__task">
+              Add Tasks <i class="fa-plus-circle fas"></i>
+            </button>
+          </div>
+        </section>
+        <section class="group">
+          <div class="container"><div class="group__item"></div></div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="./index.23b0d40f.js" defer></script>
+  </body>
+</html>
